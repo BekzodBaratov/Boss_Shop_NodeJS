@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boss Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Megrim|Nunito+Sans:400,900"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header flex">
+      <h2 class="navName">BOSS SHOP</h2>
+      <div class="nav flex">
+        <a href="./home.html">Home</a>
+        <a href="./shop.html">Card</a>
+        <a href="./creat.html">Creat</a>
+        <a href="./aboutUs.html">About Us</a>
+        <a href="./contactUs.html">Contact Us</a>
+        <a href="./login.html" class="btn">Login</a>
+        <a href="./logup.html" class="btn">Logup</a>
+      </div>
+      <div class="shopCard flex">
+        <div class="cash">
+          <span>$0.00</span>
+        </div>
+        <a href="#">
+          <img src="../images/i (7).webp" alt="" />
+        </a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="card-container">
+        <div class="bacImg"></div>
+        <div class="cardNav flex">
+          <a href="/home">Home</a>
+          <h1>Creat new Product</h1>
+          <p></p>
+        </div>
+        <!--  -->
+        <form action="creatProducts">
+          <input
+            type="file"
+            name="img"
+            id="img"
+            placeholder="please join img"
+          />
+          <input
+            type="text"
+            name="nameProduct"
+            id="nameProduct"
+            placeholder="Product Name"
+          />
+          <input
+            type="text"
+            name="category"
+            id="category"
+            placeholder="product category"
+          />
+          <input
+            type="number"
+            name="cost"
+            id="cost"
+            placeholder="product cost"
+          />
+          <select name="valyuta" id="valyuta">
+            <option value="UZS">UZS</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="RUB">RUB</option>
+          </select>
+          <textarea name="desc" id="desc" cols="30" rows="10" maxlength="300">
+          </textarea>
+          <button class="btn">Creat Product</button>
+          <button class="btn">Claer Card</button>
+          <button class="btn">Back Home</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

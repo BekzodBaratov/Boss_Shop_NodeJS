@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: numito, sans-serif;
+  background-image: linear-gradient(#ffc400, #ffecac);
+  height: 100vh;
+  overflow: hidden;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.6rem;
+}
+.container {
+  border: 5px solid white;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  width: 99%;
+  margin: 0 auto;
+  height: 90vh;
+  overflow-y: auto;
+}
+.header {
+  width: 99%;
+  margin: 2rem auto 0;
+  display: flex;
+  top: 2rem;
+}
+.header .nav {
+  gap: 3rem;
+  font-weight: 700;
+}
+.header .shopCard img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.header .shopCard span {
+  font-size: 1.6rem;
+  line-height: 5px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.card-container {
+  position: relative;
+  padding: 2rem 3rem;
+}
+.bacImg {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  border-radius: 3rem;
+  z-index: -1;
+  transform: translate(-3rem, -1rem);
+
+  background-image: url(../images/shopping\ cart\ with\ bags.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cardNav {
+  padding: 1rem 0;
+}
+.cardNav p {
+  font-weight: 700;
+}
+.cards {
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 3%;
+  row-gap: 3rem;
+}
+.card {
+  width: 30%;
+  text-align: center;
+  background-image: radial-gradient(#ffc400, #fff7dd);
+  padding: 3rem 0rem;
+  border-radius: 3rem;
+}
+.card .image {
+  display: inline-block;
+  width: 80%;
+  height: 50%;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+.card .description {
+  padding: 2rem 0 0;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  color: rgb(41, 0, 138);
+}
+.card .cost {
+  color: rgb(41, 0, 138);
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.btn {
+  border: 3px solid #ffc400;
+  background-image: linear-gradient(35deg, #ffc400, #ffe48a, #ffc400);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-image: linear-gradient(90deg, #ffc400, #ffe48a, #ffc400);
+  transform: translateY(-1rem);
+}
+.shopCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.shopCard .image {
+  padding: 1rem;
+  border-radius: 1.2rem;
+  background-color: rgba(34, 34, 34, 0.315);
+}
+.shopCard img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.shopCard .descript {
+  background-color: rgba(34, 34, 34, 0.315);
+  border-radius: 1rem;
+  padding: 0rem 2rem;
+}
+.descript {
+  position: relative;
+}
+.descript h3 {
+  font-size: 2rem;
+}
+.descript .stars {
+  width: 10vw;
+}
+.stars img {
+  width: 30px;
+}
+.descript .description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+.descript .buySec {
+  position: absolute;
+  bottom: 1rem;
+  gap: 7rem;
+}
